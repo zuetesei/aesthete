@@ -20,9 +20,23 @@ router.get('/', (req, res) => {
 });
 
 // GET a single user using id 
+router.put('/:id', (req, res) => {
+    // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
 
-// POST or create a user 
+    // pass in req.body instead to only update what's passed through
+    User.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    });
+});
+
+// POST route creates a user 
+
+// LOG IN route 
+router.post('/login', (req, res) => { });
 
 // UPDATE user name or password 
 
-// DELETE user 
+// DELETE user

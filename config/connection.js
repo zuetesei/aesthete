@@ -1,7 +1,8 @@
+// import Sequelize construct from the library
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-// connection to mySQL
+// create connection to database, passing in your MySQL info 
 const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
     host: 'localhost',
     dialect: 'mysql',

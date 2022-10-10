@@ -1,7 +1,11 @@
 const router = require('express').Router();
+<<<<<<< HEAD
 const { User } = require('../../models');
 
 
+=======
+const { User, Image } = require('../..models');
+>>>>>>> 5d90baa (added main handlebars template plus login, dashboard, and add form)
 
 
 // Dennis is working on routes 

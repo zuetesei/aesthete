@@ -1,18 +1,18 @@
 const router = require('express').Router();
-const { User } = require('../..models');
+const { User } = require('../../models');
 
 
 // Dennis is working on routes 
 // Notes on what routes we need 
 
 // GET /api/users
-router.get('/', (req, res) => {
+router.get('/api', (req, res) => {
     // Access our User model and run .findAll() method)
     User.findAll({
         // protect password
         attributes: { exclude: ['password'] }
     })
-        .then(dbUserData => res.json(dbUserData))
+        .then(dbUserData => res.json(dbUserData)).then(db=> res.send(db))
         .catch(err => {
             console.log(err);
             res.status(500).json(err);
@@ -40,3 +40,5 @@ router.post('/login', (req, res) => { });
 // UPDATE user name or password 
 
 // DELETE user
+
+module.exports = router

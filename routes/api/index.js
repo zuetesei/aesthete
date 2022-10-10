@@ -4,9 +4,9 @@ const userRoutes = require('./user-routes.js')
 
 
 //collect the packaged api endpoints 
-router.use('/users',userRoutes);
+router.use('/api',userRoutes);
 
-router.get('/user',(req,res)=>{
+router.get('/',(req,res)=>{
     res.send('index')
 })
 

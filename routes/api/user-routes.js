@@ -1,13 +1,13 @@
 const router = require('express').Router();
-const { User, Image } = require('../..models');
+const { User, Image } = require('../../models');
 
 
 // Dennis is working on routes 
 // Notes on what routes we need 
-router.use('/post',require('./post-route'))
+router.use('/post',require('./post-routes'))
 
 // GET /api/users
-router.route('/users')
+router.route('/')
 .get((req, res) => {
     // Access our User model and run .findAll() method)
     User.findAll({
@@ -25,7 +25,7 @@ router.route('/users')
 })
 
 // GET a single user using id 
-router.put('/users/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
 
     // pass in req.body instead to only update what's passed through

@@ -1,10 +1,15 @@
 
 const router = require('express').Router();
-const userRoutes = require('./user-routes.js')
+const apiRoutes = require('./api-route')
+const users = require('../users')
+const login = require('../login')
 
 
 //collect the packaged api endpoints 
-router.use('/api',userRoutes);
+router.use('/api',apiRoutes);
+router.use('/users',users)
+router.use('/login',login)
+
 
 router.get('/',(req,res)=>{
     res.send('index')

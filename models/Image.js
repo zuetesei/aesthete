@@ -2,9 +2,9 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create post class 
-class Post extends Model { }
+class Image extends Model { }
 
-Post.init(
+Image.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -12,13 +12,17 @@ Post.init(
             primaryKey: true,
             autoIncrement: true
         },
-        post_url: {
+        image_url: {
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
                 key: 'id'
             }
-        }
+        },
+        image_tag: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
     },
     {
         sequelize,
@@ -27,3 +31,5 @@ Post.init(
         modelName: 'post'
     }
 );
+
+module.exports = Image; 

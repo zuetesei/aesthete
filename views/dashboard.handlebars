@@ -1,0 +1,17 @@
+{{!-- loggedIn users will be able to see the items saved to grid --}}
+
+{{ addform }}
+
+{{#if images.length}}
+<section>
+    <h2> Your Grid </h2>
+    <ol>
+        {{#each images as |post| }}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}" class="edit-link"> Edit Post </a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../..models');
+const { User, Image } = require('../..models');
 
 
 // Dennis is working on routes 

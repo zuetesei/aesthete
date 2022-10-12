@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 
 // create connection to database, passing in your MySQL info 
-const sequelize = new Sequelize('aesthete_db', 'root', '672island!', {
+const sequelize = new Sequelize('aesthete_db', 'root', 'Boostbelau1701', {
     host: 'localhost',
     dialect: 'mysql',
     port: 3306

@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { User, Image } = require('.');
+const { User, Image } = require('../../models');
 
-router.use('/post', require('./post-route'))
+router.use('/post', require('../../routes/api/post-routes'))
 
 // // GET all users at /api/users
 

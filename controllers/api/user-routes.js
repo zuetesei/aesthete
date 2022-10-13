@@ -5,6 +5,12 @@ router.use('/post', require('../../routes/api/post-routes'))
 
 // // GET all users at /api/users
 
+router.route('/')
+.get((req,res)=>{
+    User.findAll().then(data=>res.send(data))
+})
+
+
 // router.route('/users')
 //     .get((req, res) => {
 //         // Access our User model and run .findAll() method)

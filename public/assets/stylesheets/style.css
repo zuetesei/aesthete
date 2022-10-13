@@ -1,1 +1,39 @@
-/* Kim's working on Skeleton */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;500&family=Nunito:wght@300;500&display=swap');
+
+:root {
+    --red: #a20021;
+    --pink: #f2d7d7;
+    --brown: #8f421a;
+    --black: #02111b;
+    --white: #faf6f5;
+}
+
+html,
+body {
+
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+    float: left;
+}
+
+/* footer styles */
+footer {
+    font-family: "Dancing Script";
+    font-size: 20px;
+    background-color: var(--red);
+    color: var(--black);
+}

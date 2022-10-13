@@ -1,19 +1,21 @@
 const express = require('express');
-const routes = require('./routes/api');
+const routes = require('./controllers/api');
 const sequelize = require('./config/connection');
 const path = require('path');
+const bodyparser = require('body-parser')
 
 require('dotenv').config()
-console.log(process.env.DB_PASSWORD)
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 // middleware
-app.use(express.json());
+// app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyparser.json())
 // turn on routes
-app.use('/',routes);
+app.use('/', routes);
 // app.get('/',(req,res)=>{
 //     res.send('loggin page')
 // })

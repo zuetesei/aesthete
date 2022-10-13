@@ -1,14 +1,14 @@
 const router = require('express').Router();
 const { User, Image } = require('../../models');
 
-router.use('/post', require('../../routes/api/post-routes'))
+router.use('/post', require('./img-route'))
 
 // // GET all users at /api/users
 
 router.route('/')
-.get((req,res)=>{
-    User.findAll().then(data=>res.send(data))
-})
+    .get((req, res) => {
+        User.findAll().then(data => res.send(data))
+    })
 
 
 // router.route('/users')

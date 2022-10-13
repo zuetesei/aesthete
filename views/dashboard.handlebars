@@ -1,17 +1,37 @@
 {{!-- loggedIn users will be able to see the items saved to grid --}}
 
+<header>
+    <div class="sticky-top navbar-brand">
+        <h1> Dashboard </h1>
+        <div class="navbar-menu" id="nav-links">
+            <button id="logout" class="btn btn-light"> Log Out </button>
+        </div>
+    </div>
+</header>
+
 {{ addform }}
 
-{{#if images.length}}
-<section>
-    <h2> Your Grid </h2>
-    <ol>
-        {{#each images as |post| }}
-        <li>
-            {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link"> Edit Post </a>
-        </li>
-        {{/each}}
-    </ol>
-</section>
-{{/if}}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <img src={{ url }}>
+        </div>
+        <div class="col-6">
+            <img src={{ url }}>
+        </div>
+        <div class="col">
+            <img src={{ url }}>
+        </div>
+    </div>
+    <div class="row my-4">
+        <div class="col">
+            <img src={{ url }}>
+        </div>
+        <div class="col-6">
+            <img src={{ url }}>
+        </div>
+        <div class="col">
+            <img src={{ url }}>
+        </div>
+    </div>
+</div>

@@ -8,6 +8,5 @@ router.route('/')
     res.render('homepage')
 })
 // (1) user not logged in, render homepage 
-
 // (2) route to log in & sign up page 
 module.exports= router

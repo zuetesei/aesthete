@@ -1,27 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;500&family=Nunito:wght@300;500&display=swap');
 
 :root {
-    --red: #a20021;
-    --pink: #f2d7d7;
-    --brown: #8f421a;
+    --lightgreen: #dde5b6;
+    --green: #adc178;
+    --tan: #d3b393;
+    --brown: #a98467;
+    --darkbrown: #6c584c;
     --black: #02111b;
-    --white: #faf6f5;
+    --white: #f0ead2;
 }
 
 html,
 body {
 
     height: 100%;
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
+    color: var(--black);
+    background-color: var(--lightgreen);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.hero img {
+    max-height: 30em;
+    width: auto;
 }
 
-h1 {
-    font-weight: 500;
+.title-login {
+    font-family: "Dancing Script";
+    letter-spacing: 2px;
 }
 
 #logo {
@@ -30,10 +35,69 @@ h1 {
     float: left;
 }
 
+/* log in page styles */
+.form-control {
+    background-color: var(--white);
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: var(--green);
+    border: none;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    padding: 8px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px;
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* dashboard styles */
+.dashboard-header {
+    color: var(--green);
+}
+
+.dashboard-title {
+    font-family: "Dancing Script";
+    letter-spacing: 2px;
+    color: var(--darkbrown)
+}
+
+.add-button {
+    background-color: var(--green);
+}
+
 /* footer styles */
 footer {
     font-family: "Dancing Script";
-    font-size: 20px;
-    background-color: var(--red);
+    font-size: 15px;
+    background-color: var(--green);
     color: var(--black);
 }

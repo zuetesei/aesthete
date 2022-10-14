@@ -5,7 +5,7 @@ const { User, Image } = require('../models');
 
 router.route('/')
 .get((req,res)=>{
-    res.send('home')
+    res.render('homepage')
 })
 // (1) user not logged in, render homepage 
 

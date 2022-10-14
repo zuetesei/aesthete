@@ -4,7 +4,7 @@ const { User, Image } = require('../models');
 
 router.route('/')
 .get((req,res)=>{
-    res.send('dashbord')
+    res.render('dashboard')
 })
 
 // (1) get all images and display (dashboard.handlebars)

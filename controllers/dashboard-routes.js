@@ -3,9 +3,9 @@ const sequelize = require('../config/connection');
 const { User, Image } = require('../models');
 
 router.route('/')
-.get((req,res)=>{
-    res.render('dashboard')
-})
+    .get((req, res) => {
+        res.render('dashboard')
+    })
 
 // (1) get all images and display (dashboard.handlebars)
 // (2) route to add image url page (addform.handlebars)

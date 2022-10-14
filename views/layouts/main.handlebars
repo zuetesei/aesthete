@@ -8,36 +8,40 @@
     {{!-- connecting Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/public//assets//stylesheets/style.css">
+    <!-- bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/"> Aesthete </a>
-            </h1>
-            <nav>
-                {{#if loggedIn}}
-                <button id="logout" class="btn-no-style"> Log Out </button>
-                {{else}}
-                <a href="/login"> Log In </a>
-                {{/if}}
-            </nav>
-        </header>
-        <main>
-            {{{ body }}}
-        </main>
+    {{!-- <header>
+        <!-- navbar -->
+        <nav class="navbar is-white">
+            <!-- logo -->
+            <div class="navbar-brand">
+                <a class="navbar-item">
+                    <img src="logo.jpg" alt="aesthete logo" id="logo" style="max-height: 80px">
+                </a>
+            </div>
+            <div class="navbar-menu" id="nav-links">
+                <button id="signup-btn" class="btn btn-success"> Sign Up </button>
+                <button id="login-btn" class="btn btn-light"> Log In </button>
+            </div>
+        </nav>
+    </header> --}}
 
-        <footer>
-            <p> Made with ♡ </p>
-        </footer>
-    </div>
+    <main>
 
-    {{!-- if user is loggedIn, show Log Out button --}}
-    {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
-    {{/if}}
+        {{{ body }}}
+
+    </main>
+    <footer>
+        <p> Made with 🔥 <a href="https://github.com/kimshady93/aesthete"> Dennis & Zue </a> </p>
+    </footer>
+
 
     {{!-- connecting jQuery, Popper, and Bootstrap javascript plug ins --}}
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

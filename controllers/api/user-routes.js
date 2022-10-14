@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { User, Image } = require('../../models');
 
-router.use('/post', require('./img-route'))
+router.use('/post', require('./img-routes'))
 
 // // GET all users at /api/users
 
@@ -66,4 +66,4 @@ router.route('/')
 // POST /logout 
 // router.post('/logout', (req, res) => { });
 
-module.exports = router
+module.exports = router;

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;500&family=Nunito:wght@300;500&display=swap');
 
 :root {
-    --lightgreen: #dde5b6;
+    --lightgreen: #e6edc4;
     --green: #adc178;
     --tan: #d3b393;
     --brown: #a98467;
@@ -19,8 +19,39 @@ body {
     background-color: var(--lightgreen);
 }
 
+a {
+    color: rgb(21, 57, 21);
+}
+
+/* homepage styles */
+/* header */
+.navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* hero styles */
+.welcome {
+    padding-top: 55px;
+    color: rgb(21, 57, 21);
+}
+
+.welcome h2 {
+    font-family: 'Dancing Script';
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.welcome p {
+    text-align: justify;
+}
+
+.about-app {
+    padding-top: 15px;
+}
+
 .hero img {
-    max-height: 30em;
+    max-height: 100%;
     width: auto;
 }
 
@@ -96,7 +127,7 @@ body {
 
 /* footer styles */
 footer {
-    font-family: "Dancing Script";
+    font-family: "Nunito";
     font-size: 15px;
     background-color: var(--green);
     color: var(--black);

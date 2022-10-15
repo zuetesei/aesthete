@@ -67,32 +67,102 @@ a {
 }
 
 /* log in page styles */
-.form-control {
-    background-color: var(--white);
+.login-form h1 {
+    font-size: 30px;
+    color: var(--darkbrown);
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.main-content {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .4);
+    margin: 5em auto;
+    display: flex;
+}
+
+.site-info {
+    background-color: #f0ead2;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 640px) {
+    .main-content {
+        width: 90%;
+    }
+
+    .company__info {
+        display: none;
+    }
+
+    .login_form {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 642px) and (max-width:800px) {
+    .main-content {
+        width: 70%;
+    }
+}
+
+.login-form {
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right: 1px solid #ccc;
+}
+
+form {
+    padding: 0 2em;
+}
+
+.form-input {
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 0;
+    border-bottom: 1px solid #aaa;
+    padding: 1em .5em .5em;
+    padding-left: 2em;
+    outline: none;
+    margin: 1.5em auto;
+    transition: all .5s ease;
+}
+
+.form-input:focus {
+    border-bottom-color: var(--tan);
+    box-shadow: 0 0 5px rgba(111, 87, 51, 0.4);
+    border-radius: 4px;
 }
 
 .btn {
     border-radius: 4px;
     background-color: var(--green);
     border: none;
-    color: var(--white);
+    color: var(--darkbrown);
     text-align: center;
     font-size: 16px;
     padding: 8px;
-    width: 120px;
+    width: 140px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
 }
 
-.btn span {
+.btn {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-.btn span:after {
+.btn:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -101,28 +171,21 @@ a {
     transition: 0.5s;
 }
 
-.btn:hover span {
+.btn:hover {
     padding-right: 25px;
+    color: black;
 }
 
-.btn:hover span:after {
+.btn:hover:after {
     opacity: 1;
     right: 0;
 }
 
-/* dashboard styles */
-.dashboard-header {
-    color: var(--green);
-}
-
-.dashboard-title {
-    font-family: "Dancing Script";
-    letter-spacing: 2px;
-    color: var(--darkbrown)
-}
-
-.add-button {
-    background-color: var(--green);
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: var(--white) !important;
 }
 
 /* footer styles */

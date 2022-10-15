@@ -1,31 +1,39 @@
-<div class="container-fluid row">
-    <!-- log in form -->
-    <form>
-        <h1> Welcome back! </h1>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
+<!-- Log In Form -->
+<div class="container-fluid">
+    <div class="row main-content text-center">
+        <div class="col-md-4 text-center site-info">
+            <h4 class="company-logo">
+                <img src="logo.jpg">
+            </h4>
         </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <div class="col-md-8 col-xs-12 col-sm-12 login-form ">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1>Log In</h1>
+                </div>
+                <div class="row">
+                    <form control="" class="form-group">
+                        <div class="row">
+                            <input type="text" name="email" id="email" class="form-input" placeholder="Email Address">
+                        </div>
+                        <div class="row">
+                            <!-- <span class="fa fa-lock"></span> -->
+                            <input type="password" name="password" id="password" class="form-input"
+                                placeholder="Password">
+                        </div>
+                        <div class="row">
+                            <input type="checkbox" name="remember_me" id="remember_me" class="">
+                            <label for="remember_me">Remember Me!</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                    </form>
+                </div>
+                <div class="row">
+                    <p>Don't have an Aesthete account? <a href="#"> Sign Up Here! </a></p>
+                </div>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-    `
-    <!-- sign up form -->
-    <form>
-        <h1> If you're new here, Sign Up! </h1>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter email">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 </div>

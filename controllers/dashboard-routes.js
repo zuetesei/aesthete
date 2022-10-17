@@ -10,7 +10,7 @@ router.route('/')
             res.redirect('/home')
             return
         }
-        res.render('dashboard')
+        res.render('dashboard',{Username:req.session.username})
     })
 
 // (1) get all images and display (dashboard.handlebars)

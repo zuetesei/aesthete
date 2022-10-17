@@ -4,6 +4,12 @@ const { User, Image } = require('../models');
 
 router.route('/')
     .get((req, res) => {
+        console.log(req.session.loggedIn)
+        if(!req.session.loggedIn){
+            
+            res.redirect('/home')
+            return
+        }
         res.render('dashboard')
     })
 

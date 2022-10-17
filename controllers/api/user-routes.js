@@ -1,14 +1,38 @@
 const router = require('express').Router();
 const { User, Image } = require('../../models');
+const bcrypt = require('bcrypt');
 
 router.use('/post', require('./img-routes'))
+
+function  hash(newpass){
+    return bcrypt.hash(newpass,10)
+}
 
 // // GET all users at /api/users
 
 router.route('/')
-    .get((req, res) => {
-        User.findAll().then(data => res.send(data))
+.get((req, res) => {
+    User.findAll().then(data => res.json(data)).catch(err=>{
+        console.log(err)
+        res.status(500).json(err)
+
     })
+})
+.post((req,res)=>{
+    User.create(req.body).then(dbUserData => {
+        req.session.save(() => {
+          req.session.user_id = dbUserData.id;
+          req.session.username = dbUserData.username;
+          req.session.loggedIn = true;
+      
+          res.json(dbUserData);
+        });
+      })
+      res.redirect('/dashboard')
+      console.log(req.session.loggedIn)
+})
+
+
 
 
 // router.route('/users')

@@ -1,9 +1,16 @@
+<!-- add form modal -->
 <section>
-    <form class="new-post-form d-flex p-2">
-        <div>
-            <label for="image-link"> Add a new favorite: </label>
-            <input type="text" id="image-link" name="image-link" />
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <form class="new-post-form d-flex p-2">
+                <div>
+                    <label for="image-link"> Add a new favorite: </label>
+                    <input type="text" id="image-link" name="image-link" />
+                </div>
+                <button type="submit" class="btn btn-dark ml-2"> Add </button>
+            </form>
         </div>
-        <button type="submit" class="btn btn-dark ml-2"> Add </button>
-    </form>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
 </section>

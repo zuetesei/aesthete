@@ -5,14 +5,14 @@
         <!-- logo -->
         <div class="navbar-brand">
             <a class="navbar-item">
-                <img src="logo.jpg" alt="aesthete logo" id="logo" style="max-height: 80px">
+                <img src="/assets/stylesheets/style.css" alt="aesthete logo" id="logo" style="max-height: 80px">
             </a>
         </div>
         <div class="h1 mt-3 dashboard-title">
             <h1> {{ Username }}'s Grid </h1>
         </div>
         <div class="float-right" id="nav-links">
-            <button id="logout" class="btn btn-light"> Log Out </button>
+            <button id="logout-btn" class="btn btn-light"> Log Out </button>
         </div>
         </div>
 </header>
@@ -22,23 +22,6 @@
     <h2 class="pt-1"> Add a New Favorite </h2>
 </section>
 
-<!-- add form modal -->
-<section>
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <form class="new-post-form d-flex p-2">
-                <div>
-                    <label for="image-link"> Add a new favorite: </label>
-                    <input type="text" id="image-link" name="image-link" />
-                </div>
-                <button type="submit" class="btn btn-dark ml-2"> Add </button>
-            </form>
-        </div>
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-</section>
-
 <!-- user's grid -->
 <div class="container mt-4">
     <div class="columns">
@@ -46,21 +29,21 @@
             <img class="rounded" src={{ image_url }}>
         </div>
         <div class="column">
-            <img class="rounded" src="https://bulma.io/images/placeholders/1280x960.png">
+            <img class="rounded" src={{ image_url }}>
         </div>
         <div class="column">
-            <img class="rounded" src="https://bulma.io/images/placeholders/1280x960.png">
+            <img class="rounded" src={{ image_url }}>
         </div>
     </div>
     <div class="columns">
         <div class="column">
-            <img class="rounded" src="https://bulma.io/images/placeholders/1280x960.png">
+            <img class="rounded" src={{ image_url }}>
         </div>
         <div class="column">
-            <img class="rounded" src="https://bulma.io/images/placeholders/1280x960.png">
+            <img class="rounded" src={{ image_url }}>
         </div>
         <div class="column">
-            <img class="rounded" src="https://bulma.io/images/placeholders/1280x960.png">
+            <img class="rounded" src={{ image_url }}>
         </div>
     </div>
 </div>

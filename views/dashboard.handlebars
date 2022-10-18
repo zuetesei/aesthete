@@ -23,27 +23,17 @@
 </section>
 
 <!-- user's grid -->
-<div class="container mt-4">
+<div class="container user-grid mt-4">
     <div class="columns">
+        {{ each image_url}}
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-    </div>
-    <div class="columns">
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
     </div>
 </div>

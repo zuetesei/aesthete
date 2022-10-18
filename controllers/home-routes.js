@@ -5,12 +5,11 @@ const { User, Image } = require('../models');
 
 router.route('/')
     .get((req, res) => {
-        if(req.session.loggedIn){
+        if (req.session.loggedIn) {
             res.redirect('/dashboard')
-            return
+            return;
         }
         res.render('homepage')
     })
-// (1) user not logged in, render homepage 
-// (2) route to log in & sign up page 
+
 module.exports = router

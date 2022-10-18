@@ -7,7 +7,6 @@ const { engine } = require('express-handlebars')
 require('dotenv').config()
 const { DB_PASSWORD } = process.env
 
-
 console.log(__dirname + '/public')
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -35,14 +34,10 @@ const sess = {
 };
 
 app.use(session(sess));
-
-
 app.use(bodyparser.json())
+
 // turn on routes
 app.use('/', routes);
-// app.get('/',(req,res)=>{
-//     res.send('loggin page')
-// })
 
 // turn on connection to db and server 
 // if force:true, drop and re-create all of the database tables on startup

@@ -12,13 +12,13 @@ Image.init(
             primaryKey: true,
             autoIncrement: true
         },
-        image_url: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id'
-            }
-        },
+        // image_url: {
+        //     type: DataTypes.TEXT,
+        //     references: {
+        //         model: 'user',
+        //         key: 'id'
+        //     }
+        // },
         image_tag: {
             type: DataTypes.STRING,
             allowNull: false

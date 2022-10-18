@@ -21,21 +21,15 @@
     <button id="add-new" class="button add-button"> <b> + Add new </b> </button>
 </section>
 
-{{> addform }}
+{{> addform}}
 
 <!-- user's grid -->
 <div class="container user-grid mt-4">
-    {{ each image_url}}
+    {{#each image_url}}
     <div class="columns">
         <div class="column">
-            <img class="rounded" src={{ this }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ this }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ this }}>
+            <img class="rounded" src={{ this.image_tag }}>
         </div>
     </div>
-    {{ /each }}
+    {{/each }}
 </div>

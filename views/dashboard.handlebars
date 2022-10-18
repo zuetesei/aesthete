@@ -17,14 +17,16 @@
         </div>
 </header>
 
-<section class="text-center pt-2">
+<section class="text-center pt-2" title="Add fav!">
     <button id="add-new" class="button add-button"> <b> + Add new </b> </button>
 </section>
 
+{{> addform }}
+
 <!-- user's grid -->
 <div class="container user-grid mt-4">
+    {{ each image_url}}
     <div class="columns">
-        {{ each image_url}}
         <div class="column">
             <img class="rounded" src={{ this }}>
         </div>
@@ -35,4 +37,5 @@
             <img class="rounded" src={{ this }}>
         </div>
     </div>
+    {{ /each }}
 </div>

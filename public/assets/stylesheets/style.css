@@ -188,6 +188,30 @@ form {
     background-color: var(--white) !important;
 }
 
+/* dashboard styles */
+.dashboard-header {
+    color: var(--green);
+}
+
+.dashboard-title {
+    font-family: "Dancing Script";
+    letter-spacing: 2px;
+    color: var(--darkbrown)
+}
+
+.add-button {
+    background-color: var(--green);
+}
+
+.user-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 /* footer styles */
 footer {
     font-family: "Nunito";

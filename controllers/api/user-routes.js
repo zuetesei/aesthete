@@ -28,7 +28,6 @@ router.route('/')
           res.json(dbUserData);
         });
       })
-      res.redirect('/dashboard')
       console.log(req.session.loggedIn)
 })
 

@@ -9,40 +9,33 @@
             </a>
         </div>
         <div class="h1 mt-3 dashboard-title">
-            <h1> {{ Username }}'s Grid </h1>
+            <h1> {{ username }}'s Grid </h1>
         </div>
         <div class="float-right" id="nav-links">
             <button id="logout-btn" class="btn btn-light"> Log Out </button>
         </div>
         </div>
 </header>
-<section class="text-center pt-2">
-    <button id="add-new" class="button add-button"> + </button>
-    <h2 class="pt-1"> Add a New Favorite </h2>
+
+<section class="text-center pt-2" title="Add fav!">
+    <button id="add-new" class="button add-button"> <b> + Add new </b> </button>
 </section>
 
+{{> addform }}
+
 <!-- user's grid -->
-<div class="container mt-4">
+<div class="container user-grid mt-4">
+    {{ each image_url}}
     <div class="columns">
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
         <div class="column">
-            <img class="rounded" src={{ image_url }}>
+            <img class="rounded" src={{ this }}>
         </div>
     </div>
-    <div class="columns">
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-        <div class="column">
-            <img class="rounded" src={{ image_url }}>
-        </div>
-    </div>
+    {{ /each }}
 </div>

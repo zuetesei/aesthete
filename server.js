@@ -5,7 +5,7 @@ const path = require('path');
 const bodyparser = require('body-parser')
 const { engine } = require('express-handlebars')
 require('dotenv').config()
-const {DB_PASSWORD} = process.env
+const { DB_PASSWORD } = process.env
 
 
 console.log(__dirname + '/public')
@@ -25,18 +25,16 @@ const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: DB_PASSWORD,
-    cookie: {},
-    resave: false,
-    saveUninitialized: true,
-    store: new SequelizeStore({
-      db: sequelize
-    })
-  };
-  
-  app.use(session(sess));
+  secret: DB_PASSWORD,
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
 
-
+app.use(session(sess));
 
 
 app.use(bodyparser.json())
@@ -49,7 +47,7 @@ app.use('/', routes);
 // turn on connection to db and server 
 // if force:true, drop and re-create all of the database tables on startup
 sequelize.sync({ force: false }).then(() => {
-    app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
+  app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`));
 });
 
 

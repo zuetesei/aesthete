@@ -1,8 +1,10 @@
 const router = require('express').Router()
-const {User} = require('../models')
+const {User} = require('../../models')
 
 
-router.post('/',(req,res)=>{
+router.route('/')
+.post((req,res)=>{
+  console.log('api/login')
     User.findOne({
         where: {
           email: req.body.email

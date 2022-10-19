@@ -1,7 +1,9 @@
 # Aesthete
+<img width="483" alt="Screen Shot 2022-10-13 at 8 04 55 PM" src="https://user-images.githubusercontent.com/107950028/196598435-14da3abc-1d43-4beb-99ef-3967c6e6c2b5.png">
+
 
 ## Description 
-Aesthete is a productivity tool that creatives can use to store visual inspiration. When scrolling through social platforms or reading articles online, we may come across images that inspire us and want to save for a future project. You can do that with Aesthete! Just copy the image address and paste it into the 'Add new' form on your Dashboard and the image will upload to your personal grid. 
+**Aesthete** is a productivity tool that creatives can use to store visual inspiration. When scrolling through social platforms or reading articles online, we may come across images that inspire us and want to save for a future project. You can do that with Aesthete! Just copy the image address and paste it into the 'Add new' form on your Dashboard and the image will upload to your personal grid. 
 
 ## Table of Contents
 - [User Story](#user-story)

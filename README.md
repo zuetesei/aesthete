@@ -47,6 +47,6 @@ Technologies Used: <br>
 - Sequelize 
 
 ## Licenses 
-This project was created by Dennis Jackson, Kimberly Oaks, and Zuleika Tesei as part of the curriculum for the UC Davis Coding Boot Camp and Trilogy Education Services.
+This project was created by Dennis Jackson and Zuleika Tesei as part of the curriculum for the UC Davis Coding Boot Camp and Trilogy Education Services.
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

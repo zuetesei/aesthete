@@ -26,8 +26,8 @@ https://blooming-river-84199.herokuapp.com/
 
 ## Credits 
  
-[Zuleika Tesei / Front-End](https://github.com/zuetesei)
-Technologies Used: 
+[Zuleika Tesei / Front-End](https://github.com/zuetesei) <br>
+Technologies Used: <br>
 - HTML 
 - CSS (*Flexbox) 
 - Bootstrap
@@ -36,7 +36,8 @@ Technologies Used:
 - Canva
 - Figma
 
-[Dennis Jackson / Back-End](https://github.com/monkeyd87)
+[Dennis Jackson / Back-End](https://github.com/monkeyd87) <br>
+Technologies Used: <br>
 - JavaScript 
 - Express
 - Bcrypt

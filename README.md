@@ -25,7 +25,9 @@ Aesthete is a productivity tool that creatives can use to store visual inspirati
 https://blooming-river-84199.herokuapp.com/
 
 ## Credits 
-Front End Develoment led by Zue Tesei @zuetesei 
+ 
+[Zuleika Tesei / Front-End](https://github.com/zuetesei)
+Technologies Used: 
 - HTML 
 - CSS (*Flexbox) 
 - Bootstrap
@@ -34,7 +36,7 @@ Front End Develoment led by Zue Tesei @zuetesei
 - Canva
 - Figma
 
-Back End Development led by Dennis Jackson @monkeyd87 
+[Dennis Jackson / Back-End](https://github.com/monkeyd87)
 - JavaScript 
 - Express
 - Bcrypt

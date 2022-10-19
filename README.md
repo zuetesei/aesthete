@@ -6,15 +6,15 @@ Aesthete is a productivity tool that creatives can use to store visual inspirati
 ## Table of Contents
 - [User Story](#user-story)
 - [Screenshot](#screenshot)
-- [Deployed Application](#deployed-app)
+- [Deployed Application](#deployed-application)
 - [Credits](#credits)
-- [License](#license)
+- [Licenses](#licenses)
 
 ## User Story 
-**As an** artist who wants to maximize creativity, 
-**I want** a single place to store inspiring images from various social platforms,
-**So that** when I need inspiriation, I can skip the overwhelm of scrolling through social media.
-**Instead** I will go to my Aesthete collection!
+**As an** artist who wants to maximize creativity, <br>
+**I want** a single place to store inspiring images from various social platforms,  <br>
+**So that** when I need inspiriation, I can skip the overwhelm of scrolling through social media.  <br>
+**Instead** I will go to my Aesthete collection!  <br>
 
 ## Screenshot!
 [Uploading Screen Shot 2022-10-18 at 8.59.44 AM.png…]()
@@ -45,7 +45,7 @@ Technologies Used:
 - Mysql
 - Sequelize 
 
-## Licences 
+## Licenses 
 This project was created by Dennis Jackson, Kimberly Oaks, and Zuleika Tesei as part of the curriculum for the UC Davis Coding Boot Camp and Trilogy Education Services.
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.

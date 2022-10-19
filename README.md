@@ -19,7 +19,7 @@
 **Instead** I will go to my Aesthete collection!  <br>
 
 ## Screenshot!
-[Uploading Screen Shot 2022-10-18 at 8.59.44 AM.png…]()
+<img width="1377" alt="Screen Shot 2022-10-18 at 9 35 36 PM" src="https://user-images.githubusercontent.com/107950028/196598657-b6ef0387-8a76-4339-9761-678a29c7f202.png">
 <img width="1078" alt="Screen Shot 2022-10-18 at 9 00 07 AM" src="https://user-images.githubusercontent.com/107950028/196573753-9330c2dd-56fc-46f8-87ec-b6f934122101.png">
 <img width="1390" alt="Screen Shot 2022-10-18 at 8 58 37 AM" src="https://user-images.githubusercontent.com/107950028/196573761-24c87bf3-4a65-498b-b22e-ae62c8972588.png">
 

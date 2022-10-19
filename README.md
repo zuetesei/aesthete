@@ -3,7 +3,7 @@
 
 
 ## Description 
-**Aesthete** is a productivity tool that creatives can use to store visual inspiration. When scrolling through social platforms or reading articles online, we may come across images that inspire us and want to save for a future project. You can do that with Aesthete! Just copy the image address and paste it into the 'Add new' form on your Dashboard and the image will upload to your personal grid. 
+**Aesthete** is a productivity tool that creatives can use to store visual inspiration. When scrolling through social platforms or reading articles online, we may come across images that inspire us and want to save for a future project. You can do that with Aesthete! Just copy the image address and paste it into the 'Add new' form on your Dashboard and the image will be saved to your personal grid. 
 
 ## Table of Contents
 - [User Story](#user-story)
